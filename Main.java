@@ -37,6 +37,7 @@ public class Main {
      * We start from the last non-leaf node and move upward
      * because leaf nodes already satisfy the heap property.
      */
+
     static void buildMaxHeap(WordFreq[] heap) {
         int n = heap.length;
 
@@ -55,6 +56,8 @@ public class Main {
      * If one of the children has a larger frequency than
      * the parent, we swap and recursively fix the subtree.
      */
+    // maxHeapify compares a parent with its children and restores
+// the max-heap property if the parent is smaller than a child.
     static void maxHeapify(WordFreq[] heap, int heapSize, int i) {
 
         // Left and right child indices in array representation
