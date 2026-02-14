@@ -37,7 +37,8 @@ public class Main {
      * We start from the last non-leaf node and move upward
      * because leaf nodes already satisfy the heap property.
      */
-
+    // buildMaxHeap constructs the max heap using bottom-up heapification,
+// starting from the last non-leaf node up to the root.
     static void buildMaxHeap(WordFreq[] heap) {
         int n = heap.length;
 
